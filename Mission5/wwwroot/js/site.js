@@ -2,3 +2,25 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
+
+
+$(document).ready(function() {
+    $("#calculate").click(function() {
+        let hours = $("#hours").val(); // Get hours input
+        
+        alert(hours)
+        let rate = $("#rate").val(); // Hourly rate
+
+        // Validation: Check if the input is a positive number
+        if (hours <= 0 || isNaN(hours)) {
+            alert("Please enter a valid positive number of hours.");
+            $("#hours").val(""); // Clear input if invalid
+            return;
+        }
+        
+        // Calculate total
+        let total = hours * rate;
+        
+        $("#total").val(`$${total.toFixed(2)}`); // Display result
+    });
+});

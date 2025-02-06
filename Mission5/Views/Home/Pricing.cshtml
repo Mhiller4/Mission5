@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Pricing";
+    ViewData["BodyClass"] = "price-body";
+}
+
+<section class="main-content">
+    <div class="image-section">
+        <section class="calculator">
+            <h1>Private Chef Price Calculator</h1>
+
+            <label for="hours">Enter Hours Needed for event:</label>
+            <input type="number" id="hours" min="1" placeholder="e.g. 2">
+
+            <label>Hourly Rate per Hour: </label>
+            <input type="text" id="rate" value="50" readonly>
+
+            <button id="calculate">Calculate Total</button>
+
+            <label>Total Cost:</label>
+            <input type="text" id="total" readonly>
+        </section>
+    </div>
+</section>

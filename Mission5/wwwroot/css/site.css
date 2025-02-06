@@ -17,6 +17,195 @@ html {
   min-height: 100%;
 }
 
+
+/* Main content layout */
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: 50px auto;
+  background: rgba(0, 0, 0, 0.5); /* Dark background for readability */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Image section */
+.image-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.image-section img {
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Text section */
+.text-section {
+  max-width: 400px;
+  text-align: left;
+  font-size: 1.1em;
+}
+
+/* Figcaption styling */
+figcaption {
+  font-style: italic;
+  margin-top: 5px;
+  color: #ddd;
+}
+/* Fullscreen background section */
+.hero {
+  background-image: url('images/backgroundKitchen.JPG'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Creates a parallax effect */
+  height: 100vh;
+  widthL: 100vw;/* Makes it take up the full screen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+/* Navbar Styling */
+.navbar {
+  position: marker;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8f8f8; /* Light background */
+  padding: 20px 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Make the Logo Small */
+.logo {
+  width: 50px; /* Adjust to make it tiny */
+  height: auto;
+  vertical-align: middle;
+}
+
+/* Navigation Links */
+.navbar-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-nav a:hover {
+  color: #1b6ec2;
+}
+
+/* Ensure All Words Look the Same */
+a.navbar-brand, .navbar-nav a {
+  font-size: 1.2em;
+  color: #0077cc;
+  letter-spacing: 1px;
+}
+.footer {
+
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+  align-content: center;
+}
+
+/* Make a side-by-side layout */
+.calculator-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+/* Style the image box */
+.image-box {
+  flex: 1;
+  max-width: 400px;
+}
+
+.image-box img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Style the form */
+.calculator {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.calculator h1 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+button {
+  background: #28a745;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #218838;
+}
+
+/* Default Body Styling */
 body {
-  margin-bottom: 60px;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Home Page Background */
+.home-body {
+  background-image: url('images/backgroundKitchen.JPG'); /* Change path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Calculator Page Background */
+.price-body {
+  background-image: url('images/background2.JPG'); /* Different background */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
 }
