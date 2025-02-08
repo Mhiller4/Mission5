@@ -7,8 +7,6 @@
 $(document).ready(function() {
     $("#calculate").click(function() {
         let hours = $("#hours").val(); // Get hours input
-        
-        alert(hours)
         let rate = $("#rate").val(); // Hourly rate
 
         // Validation: Check if the input is a positive number
